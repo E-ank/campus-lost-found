@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2563eb" />
+    <title>Tidak Ada Koneksi - Campus Lost &amp; Found</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --blue: #2563eb;
+        --blue-deep: #1d4ed8;
+        --ink: #0f172a;
+        --muted: #475569;
+        --line: #e2e8f0;
+        --bg: #f8fafc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+
+      .band {
+        background: var(--blue);
+        color: #ffffff;
+        padding: 20px 16px;
+      }
+
+      .band-inner,
+      main {
+        width: 100%;
+        max-width: 28rem;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .brand svg {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 auto;
+      }
+
+      .brand strong {
+        display: block;
+        font-size: 12px;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+      }
+
+      .brand span {
+        display: block;
+        margin-top: 2px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #eff6ff;
+      }
+
+      main {
+        padding: 24px 16px;
+      }
+
+      .card {
+        background: #ffffff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+      }
+
+      .mark {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        background: #eff6ff;
+        color: var(--blue-deep);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+      }
+
+      .mark svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 8px 0 0;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      button {
+        width: 100%;
+        min-height: 44px;
+        margin-top: 20px;
+        border: 0;
+        border-radius: 12px;
+        background: var(--blue-deep);
+        color: #ffffff;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1e40af;
+      }
+
+      button:focus-visible {
+        outline: 3px solid #0f172a;
+        outline-offset: 2px;
+      }
+
+      .hint {
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 1.55;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="band">
+      <div class="band-inner">
+        <div class="brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1 1 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+          </svg>
+          <div>
+            <strong>Lost &amp; Found</strong>
+            <span>Campus Portal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="card">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0" />
+            <path d="m2 12 20 0" />
+            <path d="M12 2a15.3 15.3 0 0 1 0 20" />
+            <path d="M12 2a15.3 15.3 0 0 0 0 20" />
+          </svg>
+        </div>
+        <h1>Tidak ada koneksi internet</h1>
+        <p>
+          Laporan terbaru belum bisa dimuat. Sambungkan perangkat ke internet,
+          lalu muat ulang halaman ini.
+        </p>
+        <button type="button" onclick="window.location.reload()">Muat ulang</button>
+        <p class="hint">
+          Halaman yang pernah Anda buka tetap tersimpan dan bisa dibuka kembali
+          saat koneksi kembali.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
